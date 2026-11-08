@@ -29,3 +29,7 @@ The new glass logo concept informs the welcome screen's transparent IA monogram 
 ## Hosting and domain
 
 Public development hosting on the existing Vercel Hobby account was explicitly requested. Vercel's policy still classifies business promotion as commercial even before payments are added. No paid upgrade or domain purchase is performed automatically. Keep indexing off until the chosen custom domain and final public launch.
+
+## Deployment completed
+
+The Studio is deployed at https://imran-autos-ioqs722y.sanity.studio/ and its schema and manifest were published to Sanity. The 13 initial documents were imported into ioqs722y/production with --missing, preserving existing documents. The deployment application ID is recorded in sanity.cli.ts for repeat deployments. Deployment was performed through the authenticated CLI on the owner computer. GitHub Actions still requires its deployment secret for unattended deployment; no credential was copied into source.
