@@ -152,10 +152,6 @@ export default function PageView({
                     Message Ghufran ↗
                   </a>
                 </div>
-                <small>
-                  Cards show the shop contacts and the brands currently
-                  represented at Imran Autos.
-                </small>
               </div>
               <div className="business-card-previews">
                 <a
