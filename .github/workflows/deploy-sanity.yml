@@ -1,0 +1,39 @@
+name: Deploy Sanity Studio
+on:
+  push:
+    branches: [main]
+    paths: ['studio/**', '.github/workflows/deploy-sanity.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sanity-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: sanity-production
+    defaults:
+      run:
+        working-directory: studio
+    env:
+      SANITY_STUDIO_PROJECT_ID: ioqs722y
+      SANITY_STUDIO_DATASET: production
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Check types and build
+        run: npm run typecheck && npm run build
+      - name: Deploy to Sanity hosting
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        run: |
+          if [ -z "$SANITY_AUTH_TOKEN" ]; then
+            echo 'Add SANITY_AUTH_TOKEN to the sanity-production GitHub environment secrets to enable Sanity hosting deployment.'
+            exit 1
+          fi
+          npm run deploy -- --yes --schema-required

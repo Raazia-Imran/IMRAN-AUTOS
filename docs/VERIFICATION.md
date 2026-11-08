@@ -15,3 +15,7 @@
 - Mobile CSS breakpoints are implemented; a real phone review remains a launch check. The browser preview's embedding restrictions prevented the internal narrow-frame review, so no mobile visual pass is claimed.
 
 The private design preview is a static export. Normal Vercel deployment uses Next.js with cached Sanity revalidation. Static hosting needs a rebuild after content changes. Preview robots and meta tags are noindex; public launch requires the real origin and production indexing switch.
+
+## Connected project update
+
+Sanity project ioqs722y / production is publicly readable and was verified empty. Frontend and expanded Studio type checks and builds pass. Native Sanity hosting was attempted and stopped with a login-required error; the Studio-hosted initial content action and GitHub deployment workflow are prepared. Initial content has not yet been written. Vercel deployment results are reported separately after the platform build.

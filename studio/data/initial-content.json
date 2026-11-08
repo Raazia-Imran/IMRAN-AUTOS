@@ -1,0 +1,297 @@
+[
+  {
+    "_id": "siteSettings",
+    "_type": "siteSettings",
+    "businessName": "Imran Autos",
+    "tagline": "The right parts for real performance",
+    "since": "1997",
+    "phone": "+923353436688",
+    "landline": "+922132776331",
+    "whatsapp": "923233436688",
+    "secondWhatsapp": "923239028382",
+    "email": "reshamwala2001@yahoo.com",
+    "address": "Shop #3, Al Noor Auto Parts Market, near Tibet Center, Main M.A. Jinnah Road, Karachi",
+    "instagram": "https://www.instagram.com/imranautos1997/"
+  },
+  {
+    "_id": "landingPage",
+    "_type": "landingPage",
+    "eyebrow": "BUILT AROUND YOUR DRIVE",
+    "headline": "SMALL PARTS.\nBIG DIFFERENCE.",
+    "description": "The right spark. The right fit. From your daily drive to your passion project, let’s find the part that keeps you moving.",
+    "sections": [
+      {
+        "_key": "story",
+        "key": "story",
+        "heading": "A KARACHI STORY.\nSTILL IN MOTION.",
+        "body": "Since 1997, Imran Autos has been part of Karachi’s automotive story. Today, we’re bringing that same shop conversation to your screen."
+      }
+    ]
+  },
+  {
+    "_id": "ignition",
+    "title": "Spark plugs",
+    "slug": {
+      "_type": "slug",
+      "current": "spark-plugs"
+    },
+    "description": "A better drive starts with the right spark. Ask us about fitment for your engine.",
+    "kind": "plug",
+    "_type": "category",
+    "published": true,
+    "order": 1
+  },
+  {
+    "_id": "belts",
+    "title": "Drive belts",
+    "slug": {
+      "_type": "slug",
+      "current": "drive-belts"
+    },
+    "description": "Keep everything moving together. Find the right belt for your vehicle.",
+    "kind": "belt",
+    "_type": "category",
+    "published": true,
+    "order": 2
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "about"
+    },
+    "title": "Our story",
+    "eyebrow": "KARACHI / SINCE 1997",
+    "headline": "A FAMILY BUSINESS.\nA SHARED PASSION.",
+    "intro": "Imran Autos brings the parts-counter conversation online. Tell us what you drive and we will help check the right spark plug or belt.",
+    "sections": [
+      {
+        "heading": "Rooted in Karachi.",
+        "body": "Find the shop at Al Noor Auto Parts Market, near Tibet Center on M.A. Jinnah Road. Our public Instagram page shares our focus on high-performance spark plugs and belts for German and Japanese cars.",
+        "_type": "object",
+        "_key": "section0"
+      },
+      {
+        "heading": "Details make the difference.",
+        "body": "Make, model, year and engine matter. A photo or an exact part number helps the team check compatibility before you buy.",
+        "_type": "object",
+        "_key": "section1"
+      }
+    ],
+    "_id": "page-about",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "find-my-part"
+    },
+    "title": "Find my part",
+    "eyebrow": "THE PARTS COUNTER / ONLINE",
+    "headline": "YOUR CAR.\nTHE RIGHT CONVERSATION.",
+    "intro": "Start with your vehicle. We will help with the fit.",
+    "sections": [
+      {
+        "heading": "01 / Share the essentials.",
+        "body": "Send your make, model, year and engine or chassis code. Include the part number if you have it.",
+        "_type": "object",
+        "_key": "section0"
+      },
+      {
+        "heading": "02 / Show us the part.",
+        "body": "A clear photo of the existing part and its packaging can help identify what you need. Final compatibility is checked by the shop.",
+        "_type": "object",
+        "_key": "section1"
+      },
+      {
+        "heading": "03 / Confirm before buying.",
+        "body": "Ask for current price, availability and collection or delivery arrangements before making payment.",
+        "_type": "object",
+        "_key": "section2"
+      }
+    ],
+    "_id": "page-find-my-part",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "contact"
+    },
+    "title": "Contact",
+    "eyebrow": "KARACHI / LET’S TALK PARTS",
+    "headline": "A REAL SHOP.\nREAL CONVERSATIONS.",
+    "intro": "Call, message or visit Imran Autos. The team can help check spark plugs and drive belts for your vehicle.",
+    "sections": [
+      {
+        "heading": "Planning a visit?",
+        "body": "Call ahead to confirm opening hours and the availability of the part you need.",
+        "_type": "object",
+        "_key": "section0"
+      },
+      {
+        "heading": "Bring the details.",
+        "body": "Your vehicle make, model, year, engine and part number help us give you a useful answer.",
+        "_type": "object",
+        "_key": "section1"
+      }
+    ],
+    "_id": "page-contact",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "collections"
+    },
+    "title": "Collections",
+    "eyebrow": "THE RANGE / ENGINEERED TO MOVE",
+    "headline": "FIND YOUR\nNEXT ESSENTIAL.",
+    "intro": "Explore spark plugs and drive belts. Product availability and compatibility are confirmed by the shop.",
+    "sections": [],
+    "_id": "page-collections",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "updates"
+    },
+    "title": "From the shop",
+    "eyebrow": "IMRAN AUTOS / IN MOTION",
+    "headline": "FROM THE SHOP.\nTO YOUR FEED.",
+    "intro": "Follow Imran Autos on Instagram for the shop’s own posts and product updates. Website stories and photos will be added here as they are supplied.",
+    "sections": [
+      {
+        "heading": "The original source.",
+        "body": "Open the official Instagram page to see the latest posts. We only publish media supplied or approved by the business.",
+        "_type": "object",
+        "_key": "section0"
+      }
+    ],
+    "_id": "page-updates",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "catalogue"
+    },
+    "title": "Explore parts",
+    "eyebrow": "THE COLLECTIONS / FIND YOUR PART",
+    "headline": "MADE FOR\nYOUR NEXT MOVE.",
+    "intro": "Explore our range, then check compatibility and availability with the team.",
+    "sections": [],
+    "_id": "page-catalogue",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "welcome"
+    },
+    "title": "Welcome",
+    "eyebrow": "IMRAN AUTOS / SINCE 1997",
+    "headline": "THE RIGHT PARTS.\nREAL PERFORMANCE.",
+    "intro": "Every great drive starts with a small spark.",
+    "sections": [],
+    "_id": "page-welcome",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "privacy"
+    },
+    "title": "Privacy",
+    "eyebrow": "IMRAN AUTOS / PRIVACY",
+    "headline": "YOUR PRIVACY.",
+    "intro": "Updated 8 November 2026.",
+    "sections": [
+      {
+        "heading": "Using this website",
+        "body": "This website introduces Imran Autos and helps you contact the shop. We do not provide customer accounts, online payments or an enquiry database on this website.",
+        "_type": "object",
+        "_key": "section0"
+      },
+      {
+        "heading": "Information you choose to share",
+        "body": "If you contact us by WhatsApp, phone, email or Instagram, you choose what vehicle details and contact information to share. We use that information to respond to your enquiry and discuss your requested parts. Avoid sending unnecessary identity documents or payment information in an initial enquiry.",
+        "_type": "object",
+        "_key": "section1"
+      },
+      {
+        "heading": "Browser storage and hosting",
+        "body": "We use session storage only to remember whether the short introduction has played in your current tab. No advertising or analytics scripts are included in this release. The hosting provider may process technical request information, such as IP addresses and security logs, to serve and protect the website. Published catalogue information and images may be delivered by Sanity.",
+        "_type": "object",
+        "_key": "section2"
+      },
+      {
+        "heading": "External services",
+        "body": "WhatsApp, Instagram and Google Maps open only when you follow their links. Those services apply their own privacy policies and may process information independently.",
+        "_type": "object",
+        "_key": "section3"
+      },
+      {
+        "heading": "Questions and requests",
+        "body": "For privacy questions, or to ask about information you sent us, email reshamwala2001@yahoo.com or call +923353436688.",
+        "_type": "object",
+        "_key": "section4"
+      }
+    ],
+    "_id": "page-privacy",
+    "_type": "contentPage",
+    "published": true
+  },
+  {
+    "slug": {
+      "_type": "slug",
+      "current": "terms"
+    },
+    "title": "Enquiry terms",
+    "eyebrow": "IMRAN AUTOS / TERMS",
+    "headline": "BEFORE YOU BUY.",
+    "intro": "Updated 8 November 2026.",
+    "sections": [
+      {
+        "heading": "Website enquiries",
+        "body": "This release is a catalogue and enquiry website. Sending a WhatsApp message does not place or confirm an order. The shop will confirm the part, price, stock and agreed arrangements before any purchase.",
+        "_type": "object",
+        "_key": "section0"
+      },
+      {
+        "heading": "Vehicle compatibility",
+        "body": "Vehicle names and catalogue information are a starting point. Confirm the exact make, model, year, engine and part number with the shop before buying. Visual illustrations are for presentation and do not establish product specifications or fitment.",
+        "_type": "object",
+        "_key": "section1"
+      },
+      {
+        "heading": "Prices and availability",
+        "body": "Any displayed price is in Pakistani rupees unless stated otherwise. Confirm current price, stock and any applicable collection or delivery charges directly with the shop. Product listings may change.",
+        "_type": "object",
+        "_key": "section2"
+      },
+      {
+        "heading": "Delivery, returns and warranty",
+        "body": "Ask the shop to explain and confirm the applicable delivery, return and warranty terms for the specific item before payment. No universal delivery timeframe, returns period or manufacturer warranty is promised by this website.",
+        "_type": "object",
+        "_key": "section3"
+      },
+      {
+        "heading": "Contact",
+        "body": "For questions, contact reshamwala2001@yahoo.com or +923353436688.",
+        "_type": "object",
+        "_key": "section4"
+      }
+    ],
+    "_id": "page-terms",
+    "_type": "contentPage",
+    "published": true
+  }
+]
