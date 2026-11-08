@@ -76,9 +76,9 @@ button {
   top: 20px;
 }
 .header {
-  width: min(calc(100% - 44px), 1260px);
-  height: 78px;
-  margin: 18px auto 0;
+  width: 100%;
+  height: 94px;
+  margin: 0 auto;
   padding: 0 clamp(20px, 3vw, 42px);
   display: flex;
   align-items: center;
@@ -86,20 +86,24 @@ button {
   gap: 32px;
   background: #0a1125e8;
   backdrop-filter: blur(18px);
-  border: 1px solid #ffffff24;
-  border-radius: 999px;
-  box-shadow: 0 14px 36px #0005;
+  border-bottom: 1px solid #ffffff24;
+  border-radius: 0;
+  box-shadow: none;
   position: sticky;
-  top: 16px;
+  top: 0;
   z-index: 40;
   transition:
-    transform 0.3s ease,
+    width 0.42s cubic-bezier(.2,.8,.2,1), height 0.42s cubic-bezier(.2,.8,.2,1), top 0.42s cubic-bezier(.2,.8,.2,1), border-radius 0.42s cubic-bezier(.2,.8,.2,1),
     background 0.3s ease,
     box-shadow 0.3s ease;
 }
-.header:hover {
-  transform: translateY(-2px);
-  background: #0e1832f2;
+.header-scrolled {
+  width: min(calc(100% - 44px), 1100px);
+  height: 72px;
+  top: 14px;
+  border: 1px solid #ffffff32;
+  border-radius: 999px;
+  background: #0a1125f5;
   box-shadow: 0 18px 42px #0007;
 }
 .brand img {
@@ -1362,13 +1366,14 @@ dialog::backdrop {
 }
 @media (max-width: 1000px) {
   .header {
-    width: calc(100% - 32px);
-    height: 74px;
-    margin-top: 14px;
+    width: 100%;
+    height: 80px;
+    margin-top: 0;
     padding: 0 28px;
-    top: 12px;
+    top: 0;
     gap: 20px;
   }
+  .header-scrolled { width: calc(100% - 32px); height: 68px; top: 12px; }
   .nav {
     gap: 22px;
   }
@@ -1490,13 +1495,14 @@ dialog::backdrop {
     scroll-padding-top: 86px;
   }
   .header {
-    width: calc(100% - 24px);
-    height: 66px;
-    margin-top: 12px;
+    width: 100%;
+    height: 72px;
+    margin-top: 0;
     padding: 0 16px;
-    top: 10px;
+    top: 0;
     gap: 16px;
   }
+  .header-scrolled { width: calc(100% - 24px); height: 64px; top: 10px; }
   .brand img {
     width: 130px;
   }
