@@ -7,6 +7,7 @@ import {
   type Category,
   whatsappUrl,
   safeHttps,
+  siteOrigin,
 } from "@/lib/content";
 export default function PageView({
   page: p,
@@ -18,13 +19,24 @@ export default function PageView({
   categories: Category[];
 }) {
   const welcome = p.slug === "welcome";
+  const origin = siteOrigin();
+  const breadcrumb = origin && !welcome ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: origin },
+      { "@type": "ListItem", position: 2, name: p.title, item: `${origin}/${p.slug}` },
+    ],
+  } : null;
   return (
     <div id="top">
+      {breadcrumb && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb).replace(/</g, "\\u003c") }} />}
       {!welcome && <Header settings={s} />}
       <main
         id="main"
         className={`editorial-page section ${welcome ? "welcome-page" : ""}`}
       >
+        {!welcome && <nav className="page-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><span aria-current="page">{p.title}</span></nav>}
         <div className="editorial-hero">
           <div>
             <p className="eyebrow">{p.eyebrow}</p>
